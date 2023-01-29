@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube - Web Prep</title>
+    <style>
+        form {
+            width: 250px;
+            margin: 0 auto;
+        }
+        input {
+            display: block;
+            margin-bottom: 5px;
+        }
+        div.choice input{
+            display: inline-block;
+        }
+        div.text input{
+            width: 100%;
+        }        
+    </style>
+</head>
+<body>
+<form>
+    <div class="text">
+        <input type="text" name="first_name" placeholder="Nome">
+        <input type="text" name="last_name" placeholder="Cognome">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="password" name="password" placeholder="Password">
+        <input type="date" name="birth_date" >
+        <input type="number" name="number" placeholder="Telefono">
+    </div>
+    <div class="choice">
+        <input type="checkbox" id="rock" name="rock" value="Rock">
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" id="metal" name="metal" value="Metal">
+        <label for="metal">Metal</label>
+
+        <input type="checkbox" id="jazz" name="jazz" value="Jazz">
+        <label for="jazz">Jazz</label>
+
+        <input type="checkbox" id="blues" name="blues" value="Blues">
+        <label for="blues">Blues</label>
+    </div>
+    <div class="choice">
+        <input type="radio" id="yes" name="terms" value="yes">
+        <label for="vehicle1">Si</label>
+        <input type="radio" id="no" name="terms" value="no">
+        <label for="vehicle1">No</label>
+    </div>
+    <input type="submit" value="Invia registrazione" onclick="alert('Registrazione inviata!')">
+</form>
+</body>
+</html>
